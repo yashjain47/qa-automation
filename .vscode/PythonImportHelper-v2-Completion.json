@@ -1,0 +1,413 @@
+[
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "pytest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pytest",
+        "description": "pytest",
+        "detail": "pytest",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "validate",
+        "importPath": "jsonschema",
+        "description": "jsonschema",
+        "isExtraImport": true,
+        "detail": "jsonschema",
+        "documentation": {}
+    },
+    {
+        "label": "LoginPage",
+        "importPath": "ui_tests.pages.login_page",
+        "description": "ui_tests.pages.login_page",
+        "isExtraImport": true,
+        "detail": "ui_tests.pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "sleep",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "sleep",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "sleep",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "webdriver",
+        "importPath": "selenium",
+        "description": "selenium",
+        "isExtraImport": true,
+        "detail": "selenium",
+        "documentation": {}
+    },
+    {
+        "label": "webdriver",
+        "importPath": "selenium",
+        "description": "selenium",
+        "isExtraImport": true,
+        "detail": "selenium",
+        "documentation": {}
+    },
+    {
+        "label": "LoginPage",
+        "importPath": "pages.login_page",
+        "description": "pages.login_page",
+        "isExtraImport": true,
+        "detail": "pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "LoginPage",
+        "importPath": "pages.login_page",
+        "description": "pages.login_page",
+        "isExtraImport": true,
+        "detail": "pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "LoginPage",
+        "importPath": "pages.login_page",
+        "description": "pages.login_page",
+        "isExtraImport": true,
+        "detail": "pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "InventoryPage",
+        "importPath": "pages.inventory_page",
+        "description": "pages.inventory_page",
+        "isExtraImport": true,
+        "detail": "pages.inventory_page",
+        "documentation": {}
+    },
+    {
+        "label": "InventoryPage",
+        "importPath": "pages.inventory_page",
+        "description": "pages.inventory_page",
+        "isExtraImport": true,
+        "detail": "pages.inventory_page",
+        "documentation": {}
+    },
+    {
+        "label": "InventoryPage",
+        "importPath": "pages.inventory_page",
+        "description": "pages.inventory_page",
+        "isExtraImport": true,
+        "detail": "pages.inventory_page",
+        "documentation": {}
+    },
+    {
+        "label": "CartPage",
+        "importPath": "pages.cart_page",
+        "description": "pages.cart_page",
+        "isExtraImport": true,
+        "detail": "pages.cart_page",
+        "documentation": {}
+    },
+    {
+        "label": "CartPage",
+        "importPath": "pages.cart_page",
+        "description": "pages.cart_page",
+        "isExtraImport": true,
+        "detail": "pages.cart_page",
+        "documentation": {}
+    },
+    {
+        "label": "CheckoutPage",
+        "importPath": "pages.checkout_page",
+        "description": "pages.checkout_page",
+        "isExtraImport": true,
+        "detail": "pages.checkout_page",
+        "documentation": {}
+    },
+    {
+        "label": "is_valid_email",
+        "importPath": "unit_tests.utils.validators",
+        "description": "unit_tests.utils.validators",
+        "isExtraImport": true,
+        "detail": "unit_tests.utils.validators",
+        "documentation": {}
+    },
+    {
+        "label": "test_get_posts",
+        "kind": 2,
+        "importPath": "api-tests.test_posts_api",
+        "description": "api-tests.test_posts_api",
+        "peekOfCode": "def test_get_posts():\n    \"\"\"API Test 1 — GET /posts\"\"\"\n    resp = requests.get(f\"{BASE_URL}/posts\")\n    assert resp.status_code == 200\n    data = resp.json()\n    assert len(data) == 100\n    # validate first post against schema\n    validate(instance=data[0], schema=post_schema)\ndef test_get_user_by_id():\n    \"\"\"API Test 2 — GET /users/{id}\"\"\"",
+        "detail": "api-tests.test_posts_api",
+        "documentation": {}
+    },
+    {
+        "label": "test_get_user_by_id",
+        "kind": 2,
+        "importPath": "api-tests.test_posts_api",
+        "description": "api-tests.test_posts_api",
+        "peekOfCode": "def test_get_user_by_id():\n    \"\"\"API Test 2 — GET /users/{id}\"\"\"\n    resp = requests.get(f\"{BASE_URL}/users/1\")\n    assert resp.status_code == 200\n    user = resp.json()\n    validate(instance=user, schema=user_schema)\n    # check email format\n    assert re.match(r\"[^@]+@[^@]+\\\\.[^@]+\", user[\"email\"])\n    # no null fields\n    assert all(v is not None for v in user.values())",
+        "detail": "api-tests.test_posts_api",
+        "documentation": {}
+    },
+    {
+        "label": "test_create_post",
+        "kind": 2,
+        "importPath": "api-tests.test_posts_api",
+        "description": "api-tests.test_posts_api",
+        "peekOfCode": "def test_create_post():\n    \"\"\"API Test 3 — POST /posts\"\"\"\n    payload = {\"title\": \"foo\", \"body\": \"bar\", \"userId\": 1}\n    resp = requests.post(f\"{BASE_URL}/posts\", json=payload)\n    assert resp.status_code == 201\n    response = resp.json()\n    for key in payload:\n        assert response[key] == payload[key]\n    assert \"id\" in response\ndef test_update_post_put_and_patch():",
+        "detail": "api-tests.test_posts_api",
+        "documentation": {}
+    },
+    {
+        "label": "test_update_post_put_and_patch",
+        "kind": 2,
+        "importPath": "api-tests.test_posts_api",
+        "description": "api-tests.test_posts_api",
+        "peekOfCode": "def test_update_post_put_and_patch():\n    \"\"\"API Test 4 — PUT & PATCH /posts/{id}\"\"\"\n    put_payload = {\"id\": 1, \"title\": \"updated\", \"body\": \"new body\", \"userId\": 1}\n    resp_put = requests.put(f\"{BASE_URL}/posts/1\", json=put_payload)\n    assert resp_put.status_code == 200\n    assert resp_put.json()[\"title\"] == \"updated\"\n    patch_payload = {\"title\": \"patched title\"}\n    resp_patch = requests.patch(f\"{BASE_URL}/posts/1\", json=patch_payload)\n    assert resp_patch.status_code == 200\n    assert resp_patch.json()[\"title\"] == \"patched title\"",
+        "detail": "api-tests.test_posts_api",
+        "documentation": {}
+    },
+    {
+        "label": "test_delete_post",
+        "kind": 2,
+        "importPath": "api-tests.test_posts_api",
+        "description": "api-tests.test_posts_api",
+        "peekOfCode": "def test_delete_post():\n    \"\"\"API Test 5 — DELETE /posts/{id}\"\"\"\n    resp = requests.delete(f\"{BASE_URL}/posts/1\")\n    assert resp.status_code in [200, 204]\n# -------- Negative Tests -------- #\ndef test_get_invalid_user():\n    resp = requests.get(f\"{BASE_URL}/users/9999\")\n    # should return empty object\n    assert resp.status_code == 200\n    assert resp.json() == {}",
+        "detail": "api-tests.test_posts_api",
+        "documentation": {}
+    },
+    {
+        "label": "test_get_invalid_user",
+        "kind": 2,
+        "importPath": "api-tests.test_posts_api",
+        "description": "api-tests.test_posts_api",
+        "peekOfCode": "def test_get_invalid_user():\n    resp = requests.get(f\"{BASE_URL}/users/9999\")\n    # should return empty object\n    assert resp.status_code == 200\n    assert resp.json() == {}\ndef test_create_post_missing_fields():\n    resp = requests.post(f\"{BASE_URL}/posts\", json={\"title\": \"foo\"})\n    assert resp.status_code == 201\n    # JSONPlaceholder accepts incomplete data but returns it\n    data = resp.json()",
+        "detail": "api-tests.test_posts_api",
+        "documentation": {}
+    },
+    {
+        "label": "test_create_post_missing_fields",
+        "kind": 2,
+        "importPath": "api-tests.test_posts_api",
+        "description": "api-tests.test_posts_api",
+        "peekOfCode": "def test_create_post_missing_fields():\n    resp = requests.post(f\"{BASE_URL}/posts\", json={\"title\": \"foo\"})\n    assert resp.status_code == 201\n    # JSONPlaceholder accepts incomplete data but returns it\n    data = resp.json()\n    assert data[\"title\"] == \"foo\"\n    assert \"id\" in data\ndef test_wrong_header_type():\n    headers = {\"Content-Type\": \"text/plain\"}\n    resp = requests.post(f\"{BASE_URL}/posts\", headers=headers, data=\"raw text\")",
+        "detail": "api-tests.test_posts_api",
+        "documentation": {}
+    },
+    {
+        "label": "test_wrong_header_type",
+        "kind": 2,
+        "importPath": "api-tests.test_posts_api",
+        "description": "api-tests.test_posts_api",
+        "peekOfCode": "def test_wrong_header_type():\n    headers = {\"Content-Type\": \"text/plain\"}\n    resp = requests.post(f\"{BASE_URL}/posts\", headers=headers, data=\"raw text\")\n    # Fake API still returns 201, but ensure it responds\n    assert resp.status_code in [201, 415]",
+        "detail": "api-tests.test_posts_api",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_URL",
+        "kind": 5,
+        "importPath": "api-tests.test_posts_api",
+        "description": "api-tests.test_posts_api",
+        "peekOfCode": "BASE_URL = \"https://jsonplaceholder.typicode.com\"\n'------------------------ Schemas ------------------------' \npost_schema = {\n    \"type\": \"object\",\n    \"properties\": {\n        \"userId\": {\"type\": \"number\"},\n        \"id\": {\"type\": \"number\"},\n        \"title\": {\"type\": \"string\"},\n        \"body\": {\"type\": \"string\"}\n    },",
+        "detail": "api-tests.test_posts_api",
+        "documentation": {}
+    },
+    {
+        "label": "post_schema",
+        "kind": 5,
+        "importPath": "api-tests.test_posts_api",
+        "description": "api-tests.test_posts_api",
+        "peekOfCode": "post_schema = {\n    \"type\": \"object\",\n    \"properties\": {\n        \"userId\": {\"type\": \"number\"},\n        \"id\": {\"type\": \"number\"},\n        \"title\": {\"type\": \"string\"},\n        \"body\": {\"type\": \"string\"}\n    },\n    \"required\": [\"userId\", \"id\", \"title\", \"body\"]\n}",
+        "detail": "api-tests.test_posts_api",
+        "documentation": {}
+    },
+    {
+        "label": "user_schema",
+        "kind": 5,
+        "importPath": "api-tests.test_posts_api",
+        "description": "api-tests.test_posts_api",
+        "peekOfCode": "user_schema = {\n    \"type\": \"object\",\n    \"properties\": {\n        \"id\": {\"type\": \"number\"},\n        \"name\": {\"type\": \"string\"},\n        \"username\": {\"type\": \"string\"},\n        \"email\": {\"type\": \"string\"},\n        \"address\": {\n            \"type\": \"object\",\n            \"properties\": {",
+        "detail": "api-tests.test_posts_api",
+        "documentation": {}
+    },
+    {
+        "label": "test_end_to_end",
+        "kind": 2,
+        "importPath": "e2e.test_purchase_flow",
+        "description": "e2e.test_purchase_flow",
+        "peekOfCode": "def test_end_to_end(driver):\n    # Login\n    login = LoginPage(driver)\n    login.login(\"standard_user\", \"secret_sauce\")\n    # Add to cart\n    driver.find_element(\"id\", \"add-to-cart-sauce-labs-backpack\").click()\n    driver.find_element(\"id\", \"add-to-cart-sauce-labs-bike-light\").click()\n    # Checkout process (simplified)\n    driver.find_element(\"class name\", \"shopping_cart_link\").click()\n    driver.find_element(\"id\", \"checkout\").click()",
+        "detail": "e2e.test_purchase_flow",
+        "documentation": {}
+    },
+    {
+        "label": "CartPage",
+        "kind": 6,
+        "importPath": "ui-tests.pages.cart_page",
+        "description": "ui-tests.pages.cart_page",
+        "peekOfCode": "class CartPage:\n    def __init__(self, driver):\n        self.driver = driver\n        self.cart_items = (By.CLASS_NAME, \"cart_item\")\n        self.checkout_button = (By.ID, \"checkout\")\n    def get_cart_items(self):\n        return self.driver.find_elements(*self.cart_items)\n    def proceed_to_checkout(self):\n        self.driver.find_element(*self.checkout_button).click()\n        sleep(1)",
+        "detail": "ui-tests.pages.cart_page",
+        "documentation": {}
+    },
+    {
+        "label": "CheckoutPage",
+        "kind": 6,
+        "importPath": "ui-tests.pages.checkout_page",
+        "description": "ui-tests.pages.checkout_page",
+        "peekOfCode": "class CheckoutPage:\n    def __init__(self, driver):\n        self.driver = driver\n        self.first_name = (By.ID, \"first-name\")\n        self.last_name = (By.ID, \"last-name\")\n        self.postal_code = (By.ID, \"postal-code\")\n        self.continue_button = (By.ID, \"continue\")\n        self.finish_button = (By.ID, \"finish\")\n        self.complete_header = (By.CLASS_NAME, \"complete-header\")\n    def fill_user_info(self, first, last, postal):",
+        "detail": "ui-tests.pages.checkout_page",
+        "documentation": {}
+    },
+    {
+        "label": "InventoryPage",
+        "kind": 6,
+        "importPath": "ui-tests.pages.inventory_page",
+        "description": "ui-tests.pages.inventory_page",
+        "peekOfCode": "class InventoryPage:\n    def __init__(self, driver):\n        self.driver = driver\n        self.products_title = (By.CLASS_NAME, \"title\")\n        self.inventory_items = (By.CLASS_NAME, \"inventory_item\")\n        self.cart_badge = (By.CLASS_NAME, \"shopping_cart_badge\")\n        self.cart_icon = (By.CLASS_NAME, \"shopping_cart_link\")\n        self.sort_dropdown = (By.CLASS_NAME, \"product_sort_container\")\n    def is_loaded(self):\n        return \"inventory\" in self.driver.current_url and \\",
+        "detail": "ui-tests.pages.inventory_page",
+        "documentation": {}
+    },
+    {
+        "label": "LoginPage",
+        "kind": 6,
+        "importPath": "ui-tests.pages.login_page",
+        "description": "ui-tests.pages.login_page",
+        "peekOfCode": "class LoginPage:\n    def __init__(self, driver):\n        self.driver = driver\n        self.username_input = (By.ID, \"user-name\")\n        self.password_input = (By.ID, \"password\")\n        self.login_button = (By.ID, \"login-button\")\n        self.error_message = (By.CSS_SELECTOR, \"h3[data-test='error']\")\n    def load(self):\n        self.driver.get(\"https://www.saucedemo.com/\")\n    def login(self, username, password):",
+        "detail": "ui-tests.pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "test_add_multiple_items_to_cart",
+        "kind": 2,
+        "importPath": "ui-tests.tests.test_cart",
+        "description": "ui-tests.tests.test_cart",
+        "peekOfCode": "def test_add_multiple_items_to_cart(driver):\n    login = LoginPage(driver)\n    login.load()\n    login.login(\"standard_user\", \"secret_sauce\")\n    inventory = InventoryPage(driver)\n    inventory.add_product_to_cart(\"Sauce Labs Backpack\")\n    inventory.add_product_to_cart(\"Sauce Labs Bike Light\")\n    assert inventory.get_cart_count() == \"2\"\n    inventory.go_to_cart()\n    cart = CartPage(driver)",
+        "detail": "ui-tests.tests.test_cart",
+        "documentation": {}
+    },
+    {
+        "label": "test_checkout_flow",
+        "kind": 2,
+        "importPath": "ui-tests.tests.test_checkout",
+        "description": "ui-tests.tests.test_checkout",
+        "peekOfCode": "def test_checkout_flow(driver):\n    login = LoginPage(driver)\n    login.load()\n    login.login(\"standard_user\", \"secret_sauce\")\n    inventory = InventoryPage(driver)\n    inventory.add_product_to_cart(\"Sauce Labs Backpack\")\n    inventory.go_to_cart()\n    cart = CartPage(driver)\n    cart.proceed_to_checkout()\n    checkout = CheckoutPage(driver)",
+        "detail": "ui-tests.tests.test_checkout",
+        "documentation": {}
+    },
+    {
+        "label": "test_successful_login",
+        "kind": 2,
+        "importPath": "ui-tests.tests.test_login",
+        "description": "ui-tests.tests.test_login",
+        "peekOfCode": "def test_successful_login(driver):\n    login = LoginPage(driver)\n    login.load()\n    login.login(\"standard_user\", \"secret_sauce\")\n    inventory = InventoryPage(driver)\n    assert inventory.is_loaded()\n    assert len(driver.find_elements(*inventory.inventory_items)) > 0\ndef test_invalid_login(driver):\n    login = LoginPage(driver)\n    login.load()",
+        "detail": "ui-tests.tests.test_login",
+        "documentation": {}
+    },
+    {
+        "label": "test_invalid_login",
+        "kind": 2,
+        "importPath": "ui-tests.tests.test_login",
+        "description": "ui-tests.tests.test_login",
+        "peekOfCode": "def test_invalid_login(driver):\n    login = LoginPage(driver)\n    login.load()\n    login.login(\"locked_out_user\", \"secret_sauce\")\n    assert \"locked out\" in login.get_error_message().lower()",
+        "detail": "ui-tests.tests.test_login",
+        "documentation": {}
+    },
+    {
+        "label": "driver",
+        "kind": 2,
+        "importPath": "ui-tests.conftest",
+        "description": "ui-tests.conftest",
+        "peekOfCode": "def driver():\n    options = webdriver.ChromeOptions()\n    options.add_argument(\"--headless=new\")  # run in headless mode for CI\n    driver = webdriver.Chrome()\n    driver.implicitly_wait(5)\n    yield driver\n    driver.quit()",
+        "detail": "ui-tests.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "is_valid_email",
+        "kind": 2,
+        "importPath": "unit-tests.utils.validators",
+        "description": "unit-tests.utils.validators",
+        "peekOfCode": "def is_valid_email(email):\n    pattern = r'^[\\w\\.-]+@[\\w\\.-]+\\.\\w+$'\n    return bool(re.match(pattern, email))",
+        "detail": "unit-tests.utils.validators",
+        "documentation": {}
+    },
+    {
+        "label": "test_valid_emails",
+        "kind": 2,
+        "importPath": "unit-tests.test_validators",
+        "description": "unit-tests.test_validators",
+        "peekOfCode": "def test_valid_emails():\n    assert is_valid_email(\"test@example.com\")\n    assert is_valid_email(\"user.name@domain.co\")\ndef test_invalid_emails():\n    assert not is_valid_email(\"plainaddress\")\n    assert not is_valid_email(\"missing@domain\")",
+        "detail": "unit-tests.test_validators",
+        "documentation": {}
+    },
+    {
+        "label": "test_invalid_emails",
+        "kind": 2,
+        "importPath": "unit-tests.test_validators",
+        "description": "unit-tests.test_validators",
+        "peekOfCode": "def test_invalid_emails():\n    assert not is_valid_email(\"plainaddress\")\n    assert not is_valid_email(\"missing@domain\")",
+        "detail": "unit-tests.test_validators",
+        "documentation": {}
+    }
+]
